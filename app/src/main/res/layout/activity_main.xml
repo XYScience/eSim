@@ -22,10 +22,46 @@
             android:layout_marginTop="16dp"
             android:text="下载"/>
 
-    <Button
-            android:id="@+id/btn_switch"
-            android:layout_width="wrap_content"
+    <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="切换"/>
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/btn_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="切换"/>
+
+        <EditText
+                android:id="@+id/et_switch_subscription_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="SubscriptionId"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除　"/>
+
+        <EditText
+                android:id="@+id/et_delete_subscription_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="SubscriptionId"/>
+
+    </LinearLayout>
 
 </LinearLayout>
